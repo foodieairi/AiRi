@@ -1,0 +1,24 @@
+body {
+	font-family : sans-serif ;	/* ゴシック系全般（MS Pゴシック・平成ゴシック・ヒラギノゴシック・Osakaなど） */
+	text-align : justify ;
+	background-color : #99cccc ;
+	color : #330000 ;
+    display : flex ;
+    justify-content : center 
+}
+
+
+.myname {
+    font-size : 13px ;
+    text-align : left ;
+}
+
+
+.top {
+    font-weight: bold;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#cee7ff 3px, #cee7ff 7px);
+    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#cee7ff 3px, #cee7ff 7px);
+    font-size : 25px ;
+}
