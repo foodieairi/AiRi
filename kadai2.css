@@ -1,0 +1,26 @@
+body {
+	font-family : sans-serif ;	/* ゴシック系全般（MS Pゴシック・平成ゴシック・ヒラギノゴシック・Osakaなど） */
+	text-align : justify ;
+	background-color : #99d08e ;
+	color : #330000 ;
+    display : flex ;
+    justify-content : center 
+}
+
+
+.myname {
+    font-size : 13px ;
+    text-align : left ;
+}
+
+
+.top {
+    font-weight: bold;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color : white;
+    background: rgb(5, 78, 29);/*背景色*/
+    border-left: double 7px #fafd53;/*左線*/
+    border-right: double 7px #fafd53;/*右線*/
+    font-size : 25px ;
+}

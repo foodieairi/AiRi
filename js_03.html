@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="kadai3.css">
+  <title>What is your score...?!</title>
+    <script>
+      const inRange = (a, b, num) => (Math.min(a, b) <= num && num < Math.max(a, b));
+
+      //評定
+      const pointGrade = (point) => {
+        const pointAndGPA = [
+          { min: 90, max: 100, gpa: 4, lank: "S" },
+          { min: 80, max: 90, gpa: 3, lank: "A" },
+          { min: 70, max: 80, gpa: 2, lank: "B" },
+          { min: 60, max: 70, gpa: 1, lank: "C" },
+          { min: 0, max: 60, gpa: 0, lank: "F" },
+        ]
+
+        //この範囲の中で上の評定に当てはめる
+        return pointAndGPA.filter(elem => {
+          if (inRange(elem.min, elem.max, point)) {
+            return elem
+          }
+        })[0]
+      }
+
+
+      const validate = (num) => {
+        return !isNaN(num) && num > 0 ? false : true;
+      }
+
+      //科目1から科目5、GET
+      const keisan = () => {
+        const classfication1 = document.getElementById('kamoku1').value;
+        const classfication2 = document.getElementById('kamoku2').value;
+        const classfication3 = document.getElementById('kamoku3').value;
+        const classfication4 = document.getElementById('kamoku4').value;
+        const classfication5 = document.getElementById('kamoku5').value;
+
+        console.warn(validate(classfication1));
+        //バリデーション
+        if (validate(classfication1) && validate(classfication2) && validate(classfication3) && validate(classfication4) && validate(classfication5)) {
+          alert('数字ジャナイよ！数字いれてね！！')
+          return;
+        }
+        
+        //各値の算出値を取得
+        const grade1 = pointGrade(classfication1);
+        const grade2 = pointGrade(classfication2);
+        const grade3 = pointGrade(classfication3);
+        const grade4 = pointGrade(classfication4);
+        const grade5 = pointGrade(classfication5);
+
+        //評定値を出力
+        document.getElementById('value1').value = grade1.lank
+        document.getElementById('value2').value = grade2.lank
+        document.getElementById('value3').value = grade3.lank
+        document.getElementById('value4').value = grade4.lank
+        document.getElementById('value5').value = grade5.lank
+
+        //各GPAトータル値を取得
+        const total = grade1.gpa + grade2.gpa + grade3.gpa + grade4.gpa + grade5.gpa
+        document.getElementById('GPA').value = (Math.round((total / 5) * 10) / 10).toFixed(1)
+      }
+    </script>
+  </head>
+
+  <body>
+    <form name="f1" action="#">
+
+<p class = "myname"> 2111061　常盤 あいり </p>
+<p class = "top"> What is your score...?! </p>
+
+      ●点数を入力してください<br>
+      科目1 ： <input type="text" size="5" id="kamoku1"> (点) <br>
+      科目2 ： <input type="text" size="5" id="kamoku2"> (点) <br>
+      科目3 ： <input type="text" size="5" id="kamoku3"> (点) <br>
+      科目4 ： <input type="text" size="5" id="kamoku4"> (点) <br>
+      科目5 ： <input type="text" size="5" id="kamoku5"> (点) <br>
+      <input type="button" value="GPA計算！" onclick="keisan()"><br>
+
+      <hr>
+
+      ●評価（5段階）<br>
+      科目1 ： <input type="text" size="5" id="value1"><br>
+      科目2 ： <input type="text" size="5" id="value2"><br>
+      科目3 ： <input type="text" size="5" id="value3"><br>
+      科目4 ： <input type="text" size="5" id="value4"><br>
+      科目5 ： <input type="text" size="5" id="value5"><br>
+      GPA ： <input type="text" size="10" id="GPA"><br>
+    </form>
+  </body>
+</html>
