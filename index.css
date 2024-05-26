@@ -1,9 +1,12 @@
 body {
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
     color :#555555;
+    justify-content : center ;
+    font-size : 25px ;
 
 }
 
@@ -17,7 +20,7 @@ body {
     margin: 2em 0;
     background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#cee7ff 3px, #cee7ff 7px);
     background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#cee7ff 3px, #cee7ff 7px);
-    font-size : 25px ;
+    font-size : 35px ;
     line-height: 3;
     text-decoration: none;
 
@@ -30,7 +33,7 @@ body {
     margin: 2em 0;
     background: -webkit-repeating-linear-gradient(-45deg, #003366, #003366 3px,#888888 3px, #888888 7px);
     background: repeating-linear-gradient(-45deg, #003366, #003366 3px,#888888 3px, #888888 7px);
-    font-size : 25px ;
+    font-size : 35px ;
     line-height: 3;
     text-decoration: none;
 
@@ -45,7 +48,7 @@ body {
     background: #006600;/*背景色*/
     border-left: double 7px #ffd700;/*左線*/
     border-right: double 7px #ffd700;/*右線*/
-    font-size : 25px ;
+    font-size : 35px ;
     line-height: 3;
     text-decoration: none;
 }
@@ -58,7 +61,7 @@ body {
     background: #002200;/*背景色*/
     border-left: double 7px #fafd53;/*左線*/
     border-right: double 7px #fafd53;/*右線*/
-    font-size : 25px ;
+    font-size : 35px ;
     line-height: 3;
     text-decoration: none;
 
@@ -71,7 +74,7 @@ body {
     background: -webkit-linear-gradient(#ffb03c, #ff708d);
     background: linear-gradient(to right, #ffb03c, #ff708d);
     color: white;
-    font-size : 25px ;
+    font-size : 35px ;
     line-height: 3;
     text-decoration: none;
 }
@@ -83,7 +86,7 @@ body {
     background: -webkit-linear-gradient(#ffb03c, #ff708d);
     background: -moz-linear-gradient(#ffa012, #ff829b);
     color: #6a5acd;
-    font-size : 25px ;
+    font-size : 35px ;
     line-height: 3;
     text-decoration: none;
 }
