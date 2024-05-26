@@ -8,19 +8,15 @@ body {
 }
 
 
-.myname {
-    font-size : 13px ;
-    text-align : left ;
-}
 
 
 .top {
     font-weight: bold;
     padding: 0.5em 1em;
     margin: 2em 0;
-    color : white;
-    background: rgb(5, 78, 29);/*背景色*/
-    border-left: double 7px #fafd53;/*左線*/
-    border-right: double 7px #fafd53;/*右線*/
+    color : #fff8dc;
+    background: #006600;/*背景色*/
+    border-left: double 7px #ffd700;/*左線*/
+    border-right: double 7px #ffd700;/*右線*/
     font-size : 25px ;
 }
