@@ -1,91 +1,32 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="kadai1.css"> 
-    <title>Are you healthy？</title>
-    <script>
-      const inRange = (a, b, num) => (Math.min(a, b) <= num && num < Math.max(a, b));
-
-      const bmijudge = () => {
-
-        const status = {
-          row: "低体重（痩せ型）",
-          middle: "普通体重",
-          degree1: '肥満（1度）',
-          degree2: '肥満（2度）',
-          degree3: '肥満（3度）',
-          degree4: '肥満（4度）',
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
         }
-    
-        //身長と体重まずGET
-        const cm = document.getElementById('height').value
-        const kg = document.getElementById('weight').value
-        //身長の単位変換
-        const bmim = cm / 100 ;
-        
-        //バリデーション
-        if (isNaN(cm) || isNaN(kg)) {
-          alert('数字ジャナイよ！数字いれてね！！')
+        .button:hover {
+            background-color: #0056b3;
         }
-        
-        //BMI計算
-        const bmi = kg / (bmim * bmim);
-        document.getElementById('bmi').value = bmi
-
-         //BMI四捨五入 
-         const per = Math.round(bmi * 10) / 10
-
-         //DOM埋め込み
-         document.getElementById('bmi').value = per
-        const judgeElement = document.getElementById('judge');
-
-
-        //判定
-        if (18.5 > per) {
-          judgeElement.value = status.row
-          return;
-        }
-        if (inRange(18.5, 25, per)) {
-          judgeElement.value = status.middle
-          return;
-        }
-        if (inRange(25, 30, per)) {
-          judgeElement.value = status.degree1
-          return;
-        }
-        if (inRange(30, 35, per)) {
-          judgeElement.value = status.degree2
-          return;        
-        }
-        if (inRange(35, 40, per)) {
-          judgeElement.value = status.degree3
-          return;
-        }
-        if (40 < per) {
-          judgeElement.value = status.degree4
-          return;
-        }
-
-        
-      }
-    </script>
-  </head>
-
-  <body>
-    <form name="f1" action="#">
-
- <p class = "myname"> 2111061　常盤 あいり </p>
- <p class = "top"> Are you healthy？ </p>
-
-      身長：<input type="text" size="10" id="height">（cm）<br>
-      体重：<input type="text" size="10" id="weight">（kg）<br>
-      <input type="button" value="BMI計算！" onclick="bmijudge()"><br>
-
-      <hr>
-
-      BMI：<input type="text" size="15" id="bmi"><br>
-      判定：<input type="text" size="20" id="judge">
-    </form>
-  </body>
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Main Page</h1>
+    <a href="js_01.html" class="button">Page 1</a>
+    <a href="js_02.html" class="button">Page 2</a>
+    <a href="js_03.html" class="button">Page 3</a>
+</body>
 </html>
