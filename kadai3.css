@@ -4,7 +4,8 @@ body {
 	background-color : #eac683 ;
 	color : #330000 ;
     display : flex ;
-    justify-content : center 
+    justify-content : center ;
+    font-size : 25px ;
 }
 
 
@@ -14,9 +15,10 @@ body {
 .top {
     font-weight: bold;
     padding: 0.5em 1em;
+    margin: 2em 0;
     background: -moz-linear-gradient(#ffa012, #ff829b);
     background: -webkit-linear-gradient(#ffb03c, #ff708d);
     background: linear-gradient(to right, #ffb03c, #ff708d);
     color: #FFF;
-    font-size : 25px ;
+    font-size : 30px ;
 }
