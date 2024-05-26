@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color :#555555;
+
+}
+
+
+
+
+.button1 {
+    color : #330000 ;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#cee7ff 3px, #cee7ff 7px);
+    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#cee7ff 3px, #cee7ff 7px);
+    font-size : 25px ;
+    line-height: 3;
+    text-decoration: none;
+
+}
+
+.button1:hover {
+    color : white ;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: -webkit-repeating-linear-gradient(-45deg, #003366, #003366 3px,#888888 3px, #888888 7px);
+    background: repeating-linear-gradient(-45deg, #003366, #003366 3px,#888888 3px, #888888 7px);
+    font-size : 25px ;
+    line-height: 3;
+    text-decoration: none;
+
+}
+
+
+.button2 {
+    font-weight: bold;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color : #fff8dc;
+    background: #006600;/*背景色*/
+    border-left: double 7px #ffd700;/*左線*/
+    border-right: double 7px #ffd700;/*右線*/
+    font-size : 25px ;
+    line-height: 3;
+    text-decoration: none;
+}
+
+.button2:hover {
+    font-weight: bold;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color : white ;
+    background: #002200;/*背景色*/
+    border-left: double 7px #fafd53;/*左線*/
+    border-right: double 7px #fafd53;/*右線*/
+    font-size : 25px ;
+    line-height: 3;
+    text-decoration: none;
+
+}
+
+.button3 {
+    font-weight: bold;
+    padding: 0.5em 1em;
+    background: -moz-linear-gradient(#ffa012, #ff829b);
+    background: -webkit-linear-gradient(#ffb03c, #ff708d);
+    background: linear-gradient(to right, #ffb03c, #ff708d);
+    color: white;
+    font-size : 25px ;
+    line-height: 3;
+    text-decoration: none;
+}
+
+.button3:hover {
+    font-weight: bold;
+    padding: 0.5em 1em;
+    background: linear-gradient(to right, #ffb03c, #ff708d);
+    background: -webkit-linear-gradient(#ffb03c, #ff708d);
+    background: -moz-linear-gradient(#ffa012, #ff829b);
+    color: #6a5acd;
+    font-size : 25px ;
+    line-height: 3;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
